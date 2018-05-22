@@ -7,6 +7,8 @@ import { GrillaComponent } from './grilla/grilla.component';
 import {FormsModule} from "@angular/forms";
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {ButtonModule} from 'primeng/button';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {MatButtonModule, MatCheckboxModule} from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,10 @@ import {ButtonModule} from 'primeng/button';
     BrowserModule,
     FormsModule,
     NgbModule.forRoot(),
-    ButtonModule
+    ButtonModule,
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatCheckboxModule
   ],
   providers: [],
   bootstrap: [AppComponent]

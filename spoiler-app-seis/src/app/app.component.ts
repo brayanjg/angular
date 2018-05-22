@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 
+
 @Component({
   selector: 'app-root',  // selector o componente
   templateUrl: './app.component.html', //estructura
