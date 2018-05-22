@@ -1,48 +1,48 @@
-<div class="row">
+<!--<div class="row">-->
 
-  <div class="col-sm-6 text-center"
-       *ngFor="let pelicula of arregloPeliculas">
-
-
-
-    <app-pelicula-banner
-      [descripcionPelicula]="pelicula.descripcion"
-      [nombrePelicula]="pelicula.nombre"
-      [esEstreno]="pelicula.esEstreno"
-      [urlImagen]="pelicula.urlImagen"
-      (dioClickEnEstado)="alertar($event)"
-    >
-
-    </app-pelicula-banner>
-
-    <button (click)="pelicula.nombre = 'Adrian'"> Cambiar es estreno</button>
+  <!--<div class="col-sm-6 text-center"-->
+       <!--*ngFor="let pelicula of arregloPeliculas">-->
 
 
-  </div>
+
+    <!--<app-pelicula-banner-->
+      <!--[descripcionPelicula]="pelicula.descripcion"-->
+      <!--[nombrePelicula]="pelicula.nombre"-->
+      <!--[esEstreno]="pelicula.esEstreno"-->
+      <!--[urlImagen]="pelicula.urlImagen"-->
+      <!--(dioClickEnEstado)="alertar($event)"-->
+    <!--&gt;-->
+
+    <!--</app-pelicula-banner>-->
+
+    <!--<button (click)="pelicula.nombre = 'Adrian'"> Cambiar es estreno</button>-->
 
 
-  <div class="col-sm-2 text-center"
-       *ngFor="let numero of arregloNumeros; let indice = index">
-
-    {{indice}}: Numero {{numero}}
-
-  </div>
+  <!--</div>-->
 
 
-  <div class="col-sm-6">
-    <h1 *ngIf="mostrarHola"> Hola </h1>
-    <!--<button (click)="mostrarHola =!mostrarHola"> Cambiar </button>-->
-  </div>
-  <div class="col-sm-6">
-    <h1 *ngIf="!mostrarHola"> Mundo </h1>
-  </div>
+  <!--<div class="col-sm-2 text-center"-->
+       <!--*ngFor="let numero of arregloNumeros; let indice = index">-->
 
-  <div class="col-sm-3"></div>
-  <div class="col-sm-3"></div>
-  <div class="col-sm-3"></div>
-  <div class="col-sm-3"></div>
+    <!--{{indice}}: Numero {{numero}}-->
 
-</div>
+  <!--</div>-->
+
+
+  <!--<div class="col-sm-6">-->
+    <!--<h1 *ngIf="mostrarHola"> Hola </h1>-->
+    <!--&lt;!&ndash;<button (click)="mostrarHola =!mostrarHola"> Cambiar </button>&ndash;&gt;-->
+  <!--</div>-->
+  <!--<div class="col-sm-6">-->
+    <!--<h1 *ngIf="!mostrarHola"> Mundo </h1>-->
+  <!--</div>-->
+
+  <!--<div class="col-sm-3"></div>-->
+  <!--<div class="col-sm-3"></div>-->
+  <!--<div class="col-sm-3"></div>-->
+  <!--<div class="col-sm-3"></div>-->
+
+<!--</div>-->
 
 
 <!--<div class="row">-->
@@ -98,3 +98,39 @@
 <!--Aplicar clase-->
 <!--</button>-->
 <!--</div>-->
+
+<ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
+  <ngb-panel title="Simple">
+    <ng-template ngbPanelContent>
+      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia
+      aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+      sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
+      craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+      occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+      labore sustainable VHS.
+    </ng-template>
+  </ngb-panel>
+  <ngb-panel>
+    <ng-template ngbPanelTitle>
+      <span>&#9733; <b>Fancy</b> title &#9733;</span>
+    </ng-template>
+    <ng-template ngbPanelContent>
+      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia
+      aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+      sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
+      craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+      occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+      labore sustainable VHS.
+    </ng-template>
+  </ngb-panel>
+  <ngb-panel title="Disabled" [disabled]="true">
+    <ng-template ngbPanelContent>
+      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia
+      aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+      sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
+      craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+      occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+      labore sustainable VHS.
+    </ng-template>
+  </ngb-panel>
+</ngb-accordion>

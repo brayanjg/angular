@@ -4,6 +4,8 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { PeliculaBannerComponent } from './peliculas/pelicula-banner/pelicula-banner.component';
 import { GrillaComponent } from './grilla/grilla.component';
+import {FormsModule} from "@angular/forms";
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -12,7 +14,9 @@ import { GrillaComponent } from './grilla/grilla.component';
     GrillaComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    NgbModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
